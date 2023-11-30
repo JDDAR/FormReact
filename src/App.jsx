@@ -10,7 +10,7 @@ import SignUp from "./components/SignUp"
 
 
 function App() {
-  const [step, setStep] = useState("signup");
+  const [step, setStep] = useState("signin");
   
   return (
     <>
