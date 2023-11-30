@@ -1,0 +1,35 @@
+@use "variables" as v;
+
+
+body {
+  background: v.$gradient-BG;
+  width: 100%;
+  height: 100vh;
+  font-family: v.$font-family;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  color: v.$color-font-primary;
+}

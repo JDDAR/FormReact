@@ -1,0 +1,25 @@
+@use "../variables" as v ;
+
+@mixin error() {
+  .error {
+    color: v.$color-error;
+    margin-top: 5px;
+    text-align: end;
+    display: none;
+    
+   &-terms {
+      text-align: start;
+   }
+  }
+
+  .error-message {
+    color: v.$color-error;
+    margin-top: 5px;
+    text-align: end;
+    &-terms {
+      margin-top: 25px;
+      text-align: start;
+    }
+  }
+
+}

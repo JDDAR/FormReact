@@ -1,0 +1,22 @@
+@use "../variables" as v;
+
+@mixin button-primary() { 
+  button{
+    width: 100%;
+   margin-top: 45px; 
+    padding: 20px 10px;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    background: v.$color-btn-primary;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: v.$color-font-primary;
+    &:hover {
+      background: v.$color-btn-primary-hover;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,43 @@
+@use "../variables" as v;
+
+@mixin input() {
+  input,
+  select{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    background: none;
+    border: 1px solid v.$color-stroke;
+    font-size: 1rem;
+    border-radius: 6px;
+    color: v.$color-font-secondary;
+    position: relative;
+    outline: none;
+
+    &[type="text"],
+    &[type="email"],
+    &[type="password"],
+    select{
+      padding-top: 40px;
+      padding-left: 20px;
+
+      &:invalid[data-focused="true"] {
+        box-shadow: v.$box-shadow-error; 
+      }
+
+      &:invalid[data-focused="true"] ~ p {
+        display: block;
+      }
+    }
+    &[type]:focus {
+      box-shadow: v.$box-shadow;
+    }
+    option {
+      color: v.$color-font-primary;
+      background: v.$color-BG-two;
+    }
+    &#framework {
+      padding-top: 35px;
+    }
+  }
+}
